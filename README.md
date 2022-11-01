@@ -5,9 +5,13 @@ Nacionalni parkovi i parkovi prirode dataset. Ovo je Otvoreni skup podataka koji
 - **Autor:** Mihael Petričević
 - **Jezik skupa podataka:** Hrvatski / Croatian
 - **Licenca:** [MIT](./LICENSE)
+- **Formati:** [CSV](./parkovi_prirode.csv), [JSON](./parkovi_prirode.json)
+- **Encoding:**: UTF-8
 - **Trenutna verzija skupa podataka:** 1.0.0
-- **Zadnje mijenjano**: 1.11.2022.
+- **Zadnje ažurirano**: 1.11.2022.
+- **Orginalno napravljeno**: 1.11.2022.
 - **Baza Podataka**: [PostgreSQL](https://www.postgresql.org/)
+- **Verzija PostgreSQL**: 15.0
 
 ## Opis baze podataka
 ![](./dodatno/bazaSlika.png)
