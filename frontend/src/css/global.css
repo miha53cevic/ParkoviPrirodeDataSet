@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+    background-image: url('/background.svg');
+    background-position: center; 
+}
+
+td {
+    padding: 0.5rem;
+}

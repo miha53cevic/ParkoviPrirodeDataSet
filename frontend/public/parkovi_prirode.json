@@ -1,0 +1,528 @@
+[
+    {
+        "idpark": 1,
+        "naziv": "Brijuni",
+        "povrsina": 33.9,
+        "utemeljen": "1983-10-27",
+        "sluzbenastranica": "https://www.np-brijuni.hr/hr",
+        "email": "izleti@np-brijuni.hr",
+        "nazivlokacija": "Istarska županija",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)52 525 882"
+            },
+            {
+                "tel": "00385 (0)52 525 883"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Izletnička poslovnica NP Brijuni u Fažani, Brionska 10"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Rimska vila u uvali Verige",
+                "opisznamenitosti": "Na zapadnoj obali Brijuna, u uvali Verige, smještena je raskošna rimska vila. Najveći sjaj vila je dosegla u 1. stoljeću poslije Krista, a pojedini dijelovi vile koristili su se do 6. stoljeća. Sastojala se od više građevina različitih namjena smještenih na pomno odabranim lokacijama u raznim dijelovima uvale."
+            },
+            {
+                "nazivznamenitosti": "Vidikovac na Ciprovcu",
+                "opisznamenitosti": "Najočuvaniji od tri Kupelwieserova vidikovca koji se zbog svoje konstrukcije izlagao na brojnim izložbama. Izrađeni su oko 1900. godine u željezari u Vitkovicama, u kojoj je do dolaska na Brijune radio Paul Kupelwieser. Nekoć dominantnu turističku atrakciju nadrasla je šuma. Drugi očuvani vidikovac nalazi se na brdu Saluga, iznad glavnog brijunskog kupališta."
+            }
+        ]
+    },
+    {
+        "idpark": 2,
+        "naziv": "Kornati",
+        "povrsina": 220,
+        "utemeljen": "1980-08-13",
+        "sluzbenastranica": "http://www.np-kornati.hr",
+        "email": "turizam@np-kornati.hr",
+        "nazivlokacija": "Jadransko more",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)22 435 740"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Recepcija Aba, Butina 2, Murter"
+            },
+            {
+                "nazivprodajnogmjesta": "Marina Šibenik d.o.o., Obala Jerka Šižgorića 1, Šibenik"
+            },
+            {
+                "nazivprodajnogmjesta": "Danuvius marina d.o.o., Jurjevgradska 2, Tribunj"
+            },
+            {
+                "nazivprodajnogmjesta": "Marina Kornati, Šetalište kneza Branimira 1, Biograd n/m"
+            },
+            {
+                "nazivprodajnogmjesta": "Euronautic d.o.o., Marina Kornati, Biograd n/m"
+            },
+            {
+                "nazivprodajnogmjesta": "Bimex Adria, Marina Dalmacija, Sukošan"
+            },
+            {
+                "nazivprodajnogmjesta": "Albatros Yachting, I. Meštrovića 2, Marina Zadar"
+            },
+            {
+                "nazivprodajnogmjesta": "Prosper Yachting d.o.o., Marina Tankerkomerc Zadar, Ivana Gundulića 1/B, Zadar"
+            },
+            {
+                "nazivprodajnogmjesta": "Adamo Travel, Sali 112, Sali, Dugi otok"
+            },
+            {
+                "nazivprodajnogmjesta": "ACI marina Žut, otok Žut"
+            },
+            {
+                "nazivprodajnogmjesta": "ACI marina Jezera, Obala sv. Ivana 47 E, Jezera"
+            },
+            {
+                "nazivprodajnogmjesta": "ACI marina Vodice, Artina 13 A, Vodice"
+            },
+            {
+                "nazivprodajnogmjesta": "ACI marina Skradin, Obala bana Pavla Šubića 18, Skradin"
+            },
+            {
+                "nazivprodajnogmjesta": "T. A. Bisage, Put Zaratića 3, Jezera"
+            },
+            {
+                "nazivprodajnogmjesta": "Makirina turist d.o.o., Trg Domovinskog rata 1, Pirovac"
+            },
+            {
+                "nazivprodajnogmjesta": "Nautika Veli Rat, Šetalište Ivana Klarina 1, Veli Rat, Dugi Otok"
+            },
+            {
+                "nazivprodajnogmjesta": "Nautički centa Trogir, Marina Baotić, Don Petra Špike 2A, Seget Donji"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Krune",
+                "opisznamenitosti": "Čuvene kornatske „krune“ (strmci ili litice) okrenute prema otvorenom moru, koje karakteriziraju većinu vanjskih otoka u pučinskom otočnom nizu, posebna su odlika i vrijednost ovog prostora. „Krune“ su posljedica pucanja i rasjedanja Zemljine kore uslijed podvlačenja Afričke tektonske ploče pod Euroazijsku."
+            },
+            {
+                "nazivznamenitosti": "Utvrda Tureta",
+                "opisznamenitosti": "Vrijeme Bizanta ostavilo je po mnogima najmarkantniju građevinu koju danas nalazimo na Kornatima - utvrdu Tureta na otoku Kornatu koja je izgrađena najvjerojatnije u 6. stoljeću (kasna antika/rani srednji vijek). Pretpostavlja se da je njezina vojna posada kontrolirala plovidbu kornatskim arhipelagom i čuvala krška polja Tarac i Željkovci od iznenadnih napada s mora."
+            },
+            {
+                "nazivznamenitosti": "Vidikovci",
+                "opisznamenitosti": "Vidikovac Metlina na otoku Kornatu najviši je i najimpresivniji vrh Nacionalnog parka Kornati (237 m), ali je do njega najteže doći."
+            }
+        ]
+    },
+    {
+        "idpark": 3,
+        "naziv": "Krka",
+        "povrsina": 109,
+        "utemeljen": "1985-01-24",
+        "sluzbenastranica": "https://www.npkrka.hr/hr/",
+        "email": "info@npk.hr",
+        "nazivlokacija": "Srednja Dalmacija",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)22 201 777"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Lozovac"
+            },
+            {
+                "nazivprodajnogmjesta": "Skradin"
+            },
+            {
+                "nazivprodajnogmjesta": "Roški slap"
+            },
+            {
+                "nazivprodajnogmjesta": "Kistanje"
+            },
+            {
+                "nazivprodajnogmjesta": "Burnum"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Skradinski buk",
+                "opisznamenitosti": "Skradinski buk, najduži slap na rijeci Krki, jedna je od najpoznatijih prirodnih ljepota Hrvatske. Slap tvore sedrene barijere, otoci i jezera. Može ga se razgledati tijekom cijele godine zahvaljujući mreži staza i mostova koji omogućuju ugodnu i sigurnu šetnju. Na Skradinskom buku nalaze se obnovljeni mlinovi, valjavice i stupe, koje stoljećima koriste snagu vodenog toka."
+            },
+            {
+                "nazivznamenitosti": "Roški slap",
+                "opisznamenitosti": "Roškim slapom naziva se prostrano slapište koje čine 22,5 metra visoki glavni slapovi i bezbroj rukavaca, kaskada i sedrenih otoka. Roški slap smješten je oko 36 km nizvodno od izvora rijeke Krke. Početak barijere čini niz malih kaskada (u narodu zvanih „ogrlice“) nakon kojih slijede brojni rukavci i otočići. Od „ogrlica“ vodi 517 drvenih stepenica prema Oziđanoj pećini."
+            }
+        ]
+    },
+    {
+        "idpark": 4,
+        "naziv": "Mljet",
+        "povrsina": 53.75,
+        "utemeljen": "1960-11-11",
+        "sluzbenastranica": "https://www.np-mljet.hr",
+        "email": "np-mljet@np-mljet.hr",
+        "nazivlokacija": "Otok Mljet",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)20 744 041"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Pomena"
+            },
+            {
+                "nazivprodajnogmjesta": "Polače"
+            },
+            {
+                "nazivprodajnogmjesta": "Vrbovica"
+            },
+            {
+                "nazivprodajnogmjesta": "Infopunkt"
+            },
+            {
+                "nazivprodajnogmjesta": "Mali most"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Odisejeva špilja",
+                "opisznamenitosti": "Na središnjem južnom dijelu mljetske obale nalazi se geomorfološki fenomen Jama (Odisejeva špilja) - krška šupljina čiji se strop odlomio pa uistinu izgleda kao jama ili široki bunar. U njezinom je dnu more jer je Jama prirodnim tunelom povezana s pučinom. Uz rub tunela privezano je nekoliko ribarskih čamaca čiji su vlasnici stanovnici obližnja Babina Polja, najvećeg naselja na Mljetu."
+            }
+        ]
+    },
+    {
+        "idpark": 5,
+        "naziv": "Paklenica",
+        "povrsina": 95,
+        "utemeljen": "1949-10-19",
+        "sluzbenastranica": "https://np-paklenica.hr/hr/",
+        "email": "np-paklenica@paklenica.hr",
+        "nazivlokacija": "Velebit",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)23 369 155"
+            },
+            {
+                "tel": "00385 (0)23 369 202"
+            },
+            {
+                "tel": "00385 (0)23 369 803"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Ulaz 1 Velika Paklenica"
+            },
+            {
+                "nazivprodajnogmjesta": "Ulaz 2 Mala Paklenica"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Špilja Manita peć",
+                "opisznamenitosti": "Manita peć jedina je špilja na prostoru parka koja je otvorena i uređena za posjet. Svojom prostranošću i ljepotom ukrasa oduševljava posjetitelje još od 1937. godine, kada je nakon uređenja staze započelo njeno posjećivanje. Ulaz u špilju nalazi se na 570 m nadmorske visine, a uspon od parkirališta u Velikoj Paklenici do nje traje oko sat i pol."
+            },
+            {
+                "nazivznamenitosti": "Kanjon Velike Paklenice",
+                "opisznamenitosti": "Dolina Velike Paklenice duga je 14,5 km. Zbog vodonepropusne litološke podloge od izvora Velike Paklenice, pa do njenog sutoka s Brezimenjačom, voda je u koritu Velike Paklenice prisutna tijekom cijele godine."
+            }
+        ]
+    },
+    {
+        "idpark": 6,
+        "naziv": "Plitvička jezera",
+        "povrsina": 296.8515,
+        "utemeljen": "1949-04-08",
+        "sluzbenastranica": "https://np-plitvicka-jezera.hr/",
+        "email": null,
+        "nazivlokacija": "Ličko-senjska i Karlovačka županija",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)53 751 026"
+            },
+            {
+                "tel": "00385 (0)53 751 014"
+            },
+            {
+                "tel": "00385 (0)53 751 015"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Ulaz 1"
+            },
+            {
+                "nazivprodajnogmjesta": "Ulaz 2"
+            },
+            {
+                "nazivprodajnogmjesta": "Flora"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Špilja Šupljara",
+                "opisznamenitosti": "Procjeđivanjem vode kroz raspucalu površinu otapala se vapnenačka stijena. Pritom su se proširivale podzemne pukotine i stvarali kanali. Urezivanje kanjona Donjih jezera i povećanje podzemnih šupljina ispod jedne vrtače smještene na rubnom dijelu kanjona dovelo je do nestabilnosti i urušavanja dna vrtače, odnosno svoda spilje."
+            }
+        ]
+    },
+    {
+        "idpark": 7,
+        "naziv": "Risnjak",
+        "povrsina": 63.5,
+        "utemeljen": "1953-09-15",
+        "sluzbenastranica": "https://www.risnjak.hr/",
+        "email": "marketing@np-risnjak.hr",
+        "nazivlokacija": "Gorski kotar",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)51 836 133"
+            },
+            {
+                "tel": "00385 (0)51 836 261"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Bijela Vodica - infopunkt"
+            },
+            {
+                "nazivprodajnogmjesta": "Bijela Vodica - restoran"
+            },
+            {
+                "nazivprodajnogmjesta": "Kupari - infopunkt"
+            },
+            {
+                "nazivprodajnogmjesta": "Razloge - infopunkt"
+            },
+            {
+                "nazivprodajnogmjesta": "Risnjak - planinarski dom"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Izvor Kupe",
+                "opisznamenitosti": "Područje je proglašeno zaštićenim 12. prosinca 1963. godine na površini od 10 ha. Izvor rijeke Kupe, jedna od mnogih još uvijek neriješenih zagonetki krša, jedno od najjačih, najvećih i najdubljih hrvatskih vrela. Na nadmorskoj visini od 321 m, vodena je masa oblikovala jezero zelenoplave boje koje će vas očarati svojim izgledom. Do samoga dna izvora još se nije došlo, a zadnji uron bio je do 154 m."
+            },
+            {
+                "nazivznamenitosti": "Rodna kuća rijeke Kupe",
+                "opisznamenitosti": "Rodna kuća rijeke Kupe centar je za prihvat, educiranje i informiranje posjetitelja koji svojim imenom jasno kazuje kako je smješten u neposrednoj blizini izvora Kupe, koja tako postaje jedina hrvatska rijeka s „rodnom kućom“, a u svom prostoru interpretira bogatu bioraznolikost ove tekućice."
+            },
+            {
+                "nazivznamenitosti": "Poučna staza Leska",
+                "opisznamenitosti": "Godine 1993. u NP Risnjak otvorena je prva poučna staza unutar hrvatskih nacionalnih parkova - Leska. Staza je kružnog oblika, dužine 4200 metara i smještena je na nadmorskoj visini od 700 metara. Duž staze postavljene su ploče koje na hrvatskom i engleskom jeziku poučavaju posjetitelje o najznačajnijim objektima i pojavama karakterističnima kako za Risnjak, tako i za cijeli Gorski kotar."
+            }
+        ]
+    },
+    {
+        "idpark": 8,
+        "naziv": "Sjeverni Velebit",
+        "povrsina": 109,
+        "utemeljen": "1999-06-09",
+        "sluzbenastranica": "https://np-sjeverni-velebit.hr",
+        "email": "promidzba@np-sjeverni-velebit.hr",
+        "nazivlokacija": "Velebit",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)53 665 393"
+            }
+        ],
+        "nazivvrsta": "Nacionalni Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Infocentar Krasno (Uprava NP Sjeverni Velebit), Krasno 96, Krasno"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Velebitski botanički vrt",
+                "opisznamenitosti": "U neposrednoj blizini Zavižana, petnaestak minuta hoda od planinarskog doma, nalazi se Velebitski botanički vrt osnovan 1967. godine, na inicijativu dr. Frana Kušana, profesora na Farmaceutsko-biokemijskom fakultetu u Zagrebu. Već 1969. godine vrt dobiva status spomenika parkovne arhitekture. Ideja koja je vodila osnivače botaničkog vrta aktualna je i danas - željeli su bogatstvo flore Velebita učiniti dostupnim ne samo znanstvenicima, istraživačima i zaljubljenicima u Velebit, nego i svim posjetiteljima koji dođu na Sjeverni Velebit. Nedugo nakon osnivanja vrta okolno je područje proglašeno posebnim botaničkim rezervatom Zavižan - Balinovac - Velika kosa."
+            }
+        ]
+    },
+    {
+        "idpark": 9,
+        "naziv": "Biokovo",
+        "povrsina": 195.5,
+        "utemeljen": "1981-01-01",
+        "sluzbenastranica": "https://pp-biokovo.hr/en",
+        "email": "info@pp-biokovo.hr",
+        "nazivlokacija": "Splitsko-dalmatinska županija",
+        "nazivdrzava": "Hrvatska",
+        "telefon": null,
+        "nazivvrsta": "Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Ulazna recepcija Parka uz cestu D 512 Makarska - Vrgorac (8 km od smjera Makarske prema Vrgorcu)"
+            },
+            {
+                "nazivprodajnogmjesta": "Infocentar Marineta u Makarskoj, Marineta - Mala obala 16, 21 300 Makarska"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Biokovski botanički vrt Kotišina",
+                "opisznamenitosti": "Smješten je na primorskim obroncima planine Biokovo iznad sela Kotišina, na nadmorskoj visini od 350 do 500 metara i dijelom je u Parku prirode Biokovo."
+            }
+        ]
+    },
+    {
+        "idpark": 10,
+        "naziv": "Dinara",
+        "povrsina": 630.52,
+        "utemeljen": "2021-02-20",
+        "sluzbenastranica": null,
+        "email": null,
+        "nazivlokacija": "Splitsko-dalmatinska županija, Šibensko-kninska županija",
+        "nazivdrzava": "Hrvatska",
+        "telefon": null,
+        "nazivvrsta": "Park Prirode",
+        "mjestoprodajeulaznice": null,
+        "znamenitost": null
+    },
+    {
+        "idpark": 11,
+        "naziv": "Kopački rit",
+        "povrsina": 177,
+        "utemeljen": "1976-05-13",
+        "sluzbenastranica": "https://pp-kopacki-rit.hr/",
+        "email": "prijemni.centar@pp-kopacki-rit.hr",
+        "nazivlokacija": "Baranja",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)31 445 445"
+            },
+            {
+                "tel": "00385 (0)31 752 320"
+            },
+            {
+                "tel": "00385 (0)31 752 322"
+            }
+        ],
+        "nazivvrsta": "Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Prijemni centar Kopačevo"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Kompleks dvoraca Tikveš",
+                "opisznamenitosti": "U srcu Baranje obuhvaćen Parkom prirode Kopački rit, smjestio se romantičarski arhitektonski sklop ladanjske arhitekture – kompleks dvoraca Tikveš. To je prostor šuma i perivoja unutar kojega su smješteni rezidencijalni objekti: novi dvorac s aneksom, stari dvorac, mali sakralni objekt (kapelica Papinog blagoslova), te prateći objekti s restoranom."
+            },
+            {
+                "nazivznamenitosti": "Šetnica bijelog lopoča",
+                "opisznamenitosti": "Nova šetnica kroz ovo jedinstveno zaštićeno područje duga je ukupno 2550 m. Šetnica povezuje prijemni centar i pristanište brodova preko jezera Mali Sakadaš. Posjetitelji tijekom šetnje mogu doživjeti Kopački rit u malom, uživati u bogatoj ritskoj vegetaciji, trski, šašu te mnoštvu lopoča i vrbe."
+            }
+        ]
+    },
+    {
+        "idpark": 12,
+        "naziv": "Lonsko Polje",
+        "povrsina": 506.5,
+        "utemeljen": "1993-02-03",
+        "sluzbenastranica": "http://www.pp-lonjsko-polje.hr",
+        "email": "info@pp-lonjsko-polje.hr",
+        "nazivlokacija": "Lonsko Polje",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)44 672 080"
+            },
+            {
+                "tel": "00385 (0)44 611 190"
+            }
+        ],
+        "nazivvrsta": "Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Krapje 18, 44324 Jasenovac"
+            },
+            {
+                "nazivprodajnogmjesta": "Čigoč 26, 44203 Gušće"
+            }
+        ],
+        "znamenitost": null
+    },
+    {
+        "idpark": 13,
+        "naziv": "Medvednica",
+        "povrsina": 179.38,
+        "utemeljen": "1981-06-16",
+        "sluzbenastranica": "https://www.pp-medvednica.hr/",
+        "email": "info@pp-medvednica.hr",
+        "nazivlokacija": "Grad Zagreb",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)1 458 6317"
+            }
+        ],
+        "nazivvrsta": "Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Špilja Veternica (Glavica bb)"
+            },
+            {
+                "nazivprodajnogmjesta": "Rudnik Zrinski (Malo Sljeme bb)"
+            },
+            {
+                "nazivprodajnogmjesta": "Srednjovjekovni grad Medvedgrad (Sljemenska cesta bb)"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Petsto Horvatovih stuba",
+                "opisznamenitosti": "Petsto kamenih stuba mnogi smatraju najimpresivnijim i najljepšim lokalitetom izgrađenim ljudskom rukom na ovoj planini."
+            }
+        ]
+    },
+    {
+        "idpark": 14,
+        "naziv": "Papuk",
+        "povrsina": 336,
+        "utemeljen": "1999-04-23",
+        "sluzbenastranica": "https://www.pp-papuk.hr/",
+        "email": "kontakt@pp-papuk.hr",
+        "nazivlokacija": "Virovitičko-podravska, Požeško-slavonska županija",
+        "nazivdrzava": "Hrvatska",
+        "telefon": [
+            {
+                "tel": "00385 (0)34 313 029"
+            },
+            {
+                "tel": "00385 (0)34 313 030"
+            }
+        ],
+        "nazivvrsta": "Park Prirode",
+        "mjestoprodajeulaznice": [
+            {
+                "nazivprodajnogmjesta": "Velika, S. Radića 46 - Centar za posjetitelje"
+            },
+            {
+                "nazivprodajnogmjesta": "Jankovac - Ekotočka Jankovac"
+            }
+        ],
+        "znamenitost": [
+            {
+                "nazivznamenitosti": "Stari grad Kaptol",
+                "opisznamenitosti": "U središtu mjesta Kaptol nalaze se u velikom opsegu sačuvani ostaci utvrde, crkve i stambenog trakta, te nedavno obnovljen crkveni zvonik. Kaptolska utvrda šesterokutni je kasnogotičko-renesansni kaštel s kružnim polukulama i četvrtastom ulaznom kulom."
+            }
+        ]
+    }
+]
