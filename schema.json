@@ -1,0 +1,110 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/miha53cevic/ParkoviPrirodeDataSet/blob/main/schema.json",
+    "type": "array",
+    "title": "Parkovi Prirode DataSet",
+    "description": "Otvoreni skup parkova prirode",
+    "items": {
+        "type": "object",
+        "title": "Park",
+        "required": [
+            "idpark",
+            "naziv",
+            "povrsina",
+            "utemeljen",
+            "sluzbenastranica",
+            "email",
+            "nazivlokacija",
+            "nazivdrzava",
+            "tel",
+            "nazivvrsta",
+            "nazivprodajnogmjesta",
+            "znamenitost"
+        ],
+        "properties": {
+            "idpark": {
+                "type": "integer",
+                "title": "Id parka",
+                "description": "Jedinstvena šifra za Park Prirode"
+            },
+            "naziv": {
+                "type": "string",
+                "title": "Naziv parka",
+                "description": "Naziv Parka Prirode"
+            },
+            "povrsina": {
+                "type": "number",
+                "title": "Povrsina parka",
+                "description": "Površina Parka u km^2"
+            },
+            "utemeljen": {
+                "type": "string",
+                "title": "Utemeljenje parka",
+                "description": "Datum kada je postao Park Prirode u YEAR-MONTH-DAY formatu"
+            },
+            "sluzbenastranica": {
+                "type": ["string", "null"],
+                "title": "Sluzbena stranica",
+                "description": "URL službene stranice"
+            },
+            "email": {
+                "type": ["string", "null"],
+                "title": "Email parka",
+                "description": "Email za kontakt Parka Prirode"
+            },
+            "nazivlokacija": {
+                "type": "string",
+                "title": "Lokacija parka",
+                "description": "Naziv lokacije gdje se nalazi Park Prirode"
+            },
+            "nazivdrzava": {
+                "type": "string",
+                "title": "Drzava u kojoj se nalazi park",
+                "description": "Naziv drzave u kojoj se nalazi Park Prirode"
+            },
+            "tel": {
+                "type": "array",
+                "title": "Telefonski brojevi parka",
+                "items": {
+                    "type": ["string", "null"],
+                    "title": "Telefonski broj"
+                }
+            },
+            "nazivvrsta": {
+                "type": "string",
+                "title": "Vrsta parka",
+                "description": "Koje vrste je, npr. Park Prirode ili Nacionalni Park"
+            },
+            "nazivprodajnogmjesta": {
+                "type": "array",
+                "title": "Prodajna mjesta",
+                "items": {
+                    "type": ["string", "null"],
+                    "title": "Naziv prodajnog mjesta"
+                }
+            },
+            "znamenitost": {
+                "type": "array",
+                "title": "Znamenitosti parka",
+                "items": {
+                    "type": "object",
+                    "title": "Znamenitost",
+                    "required": [
+                        "nazivznamenitosti",
+                        "opisznamenitosti"
+                    ],
+                    "properties": {
+                        "nazivznamenitosti": {
+                            "type": ["string", "null"],
+                            "title": "Naziv znamenitosti"
+                        },
+                        "opisznamenitosti": {
+                            "type": ["string", "null"],
+                            "title": "Opis znamenitosti"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

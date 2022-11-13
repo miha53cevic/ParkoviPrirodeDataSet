@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container } from '@mui/material';
 
 import TopAppBar from '../components/TopAppBar';
-import DataTableContent from '../components/DataTableContent';
+import DataTableContent from '../features/DataTableContent';
 
 const Datatable: React.FC = () => {
 
