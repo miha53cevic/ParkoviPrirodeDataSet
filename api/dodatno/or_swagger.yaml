@@ -9,8 +9,8 @@ info:
   license:
     name: "MIT"
     url: "https://github.com/miha53cevic/ParkoviPrirodeDataSet/blob/main/LICENSE"
-host: "localhost:3000"
-basePath: "/v1"
+host: "localhost:3001"
+basePath: "/api/v1"
 schemes: 
   - http
 paths:
