@@ -1,0 +1,352 @@
+swagger: "2.0"
+info:
+  title: "Parkovi prirode API"
+  version: "1.0.0"
+  contact:
+    name: "Mihael Petričević"
+    url: "https://github.com/miha53cevic/ParkoviPrirodeDataSet/blob/main/README.md"
+    email: "mihael.petricevic@fer.hr"
+  license:
+    name: "MIT"
+    url: "https://github.com/miha53cevic/ParkoviPrirodeDataSet/blob/main/LICENSE"
+host: "localhost:3000"
+basePath: "/v1"
+schemes: 
+  - http
+paths:
+  /:
+    get:
+      summary: "Vrati openapi.json"
+      description: "Vraća openapi.json file"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+  /podaci:
+    get:
+      tags:
+      - "podaci"
+      summary: "Vrati sve parkove prirode"
+      description: "Dump cijele baze odnosno svih parkova prirode u bazi"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /drzave:
+    get:
+      tags:
+      - "drzave"
+      summary: "Vrati sve države"
+      description: "Vrati sve države parkova prirode unesenih u bazi podataka"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /lokacije:
+    get:
+      tags:
+      - "lokacije"
+      summary: "Vrati sve lokacije"
+      description: "Vrati sve lokacije parkova prirode unesenih u bazi podataka"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /mjesta_prodaje:
+    get:
+      tags:
+      - "mjestaProdaje"
+      summary: "Vrati sva mjesta prodaje"
+      description: "Vrati sva mjesta prodaje karata parkova prirode unesenih u bazi podataka"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /park/{id}:
+    get:
+      tags:
+      - "park"
+      summary: "Vrati park prirode po id"
+      description: "Vrati jedan park prirode s id iz url"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Jedinstveni id od parka prirode"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "Uspješno vraćen park prirode"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+        "404":
+          description: "Park prirode s tim id nije pronađen"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+    put:
+      tags:
+      - "park"
+      summary: "Promijeni park prirode po id"
+      description: "Promijeni podatke parka prirode s id"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Jedinstveni id od parka prirode"
+        required: true
+        type: "integer"
+        format: "int64"
+      - in: "body"
+        name: "body"
+        description: "Promijenjeni park prirode"
+        required: true
+        schema:
+          $ref: "#/definitions/ParkPrirodeNoID"
+      responses:
+        "200":
+          description: "Uspješno promjenjen park prirode s id"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "400":
+          description: "Ne postoji park prirode s tim id"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+    delete:
+      tags:
+      - "park"
+      summary: "Izbriši park prirode po id"
+      description: "Izbriši park prirode s id iz baze podataka"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Jedinstveni id od parka prirode"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "Uspješno izbrisan park prirode s id"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "400":
+          description: "Ne postoji park prirode s tim id"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /park:
+    post:
+      tags:
+      - "park"
+      summary: "Dodaj novi park prirode"
+      description: "Dodaj novi park prirode u bazu podataka"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Novi park prirode"
+        required: true
+        schema:
+          $ref: "#/definitions/ParkPrirode"
+      responses:
+        "200":
+          description: "Uspješno dodan park prirode"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "400":
+          description: "Već postoji park prirode s tim id"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /telefoni:
+    get:
+      tags:
+      - "telefoni"
+      summary: "Vrati sve telefonske brojeve"
+      description: "Vrati sve telefonske brojeve od parkova prirode unesenih u bazi podataka"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /vrste:
+    get:
+      tags:
+      - "vrste"
+      summary: "Vrati sve vrste parkova"
+      description: "Vrati sve vrste parkova unesenih u bazi podataka"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+  /znamenitosti:
+    get:
+      tags:
+      - "znamenitosti"
+      summary: "Vrati sve znamenitosti parkova prirode"
+      description: "Vrati sve znamenitosti parkova prirode unesenih u bazi podataka"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Uspješan dohvat"
+          schema:
+            $ref: "#/definitions/ResponseObject"
+        "500":
+          description: "Greška s bazom"
+          schema:
+            $ref: "#/definitions/ResponseObjectError"
+definitions:
+  ResponseObject:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        example: "200"
+      message:
+        type: "string"
+        example: "OK"
+      response:
+        type: "object"
+        example: "{}"
+  ResponseObjectError:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        example: "400"
+      message:
+        type: "string"
+        example: "BAD REQUEST"
+      response:
+        type: "object"
+        example: "null"
+  ParkPrirode:
+    type: "object"
+    properties:
+      idParka:
+        type: "integer"
+        format: "int64"
+        example: 1
+      naziv:
+        type: "string"
+        example: "Velebit"
+      povrsina:
+        type: "number"
+        example: 300.27
+      utemljen:
+        type: "string"
+        example: "2005-2-3"
+      sluzbenaStranica: 
+        type: "string"
+        example: "www.park.hr"
+      email:
+        type: "string"
+        example: "park@park.hr"
+      idLokacija:
+        type: "integer"
+        format: "int64"
+        example: 1
+      idDrzava:
+        type: "integer"
+        format: "int64"
+        example: 1
+      idVrsta:
+        type: "integer"
+        format: "int64"
+        example: 1
+  ParkPrirodeNoID:
+    type: "object"
+    properties:
+      naziv:
+        type: "string"
+        example: "Velebit"
+      povrsina:
+        type: "number"
+        example: 300.27
+      utemljen:
+        type: "string"
+        example: "2005-2-3"
+      sluzbenaStranica: 
+        type: "string"
+        example: "www.park.hr"
+      email:
+        type: "string"
+        example: "park@park.hr"
+      idLokacija:
+        type: "integer"
+        format: "int64"
+        example: 1
+      idDrzava:
+        type: "integer"
+        format: "int64"
+        example: 1
+      idVrsta:
+        type: "integer"
+        format: "int64"
+        example: 1
+  
