@@ -3,6 +3,8 @@ import { AppBar, Box, Button, Stack, Toolbar, Typography } from '@mui/material';
 import ForestIcon from '@mui/icons-material/Forest';
 import { useNavigate } from 'react-router-dom';
 
+import UserSettingsButton from './components/UserSettingsButton';
+
 const TopAppBar: React.FC = () => {
 
     const navigateTo = useNavigate();
@@ -37,13 +39,16 @@ const TopAppBar: React.FC = () => {
                         Parkovi Prirode DataSet
                     </Typography>
                 </Stack>
-                <Button 
-                    variant='contained' 
-                    color='secondary'
-                    onClick={handleDataTableClick}
-                >
-                    Datatable
-                </Button>
+                <Box sx={{ mr: '1rem' }}>
+                    <Button
+                        variant='contained'
+                        color='secondary'
+                        onClick={handleDataTableClick}
+                    >
+                        Datatable
+                    </Button>
+                </Box>
+                <UserSettingsButton />
             </Toolbar>
         </AppBar>
     );

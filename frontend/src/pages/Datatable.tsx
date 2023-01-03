@@ -14,7 +14,7 @@ const Datatable: React.FC = () => {
     useEffect(() => {
         fetch(import.meta.env.VITE_BACKEND_URL + '/podaci')
             .then(res => res.json())
-            .then(data => setData(data))
+            .then(data => setData(data.response))
             .catch(err => console.error(err));
     }, []);
 

@@ -1,9 +1,52 @@
 import React from 'react';
-import { Container, Paper, Stack, Typography } from '@mui/material';
+import { Container, Paper, Stack, Typography, Grid, Button } from '@mui/material';
 
 import TopAppBar from '../components/TopAppBar';
+import { jsonToCSV } from 'react-papaparse';
+import { useAuth0 } from '@auth0/auth0-react';
+
+const downloadJSON = (jsonFile: any) => {
+    const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
+        JSON.stringify(jsonFile)
+    )}`;
+    const link = document.createElement("a");
+    link.href = jsonString;
+    link.download = "parkoviOsvjezeni.json";
+
+    link.click();
+};
+
+const downloadCSV = (jsonFile: any) => {
+    // Convert JSON to CSV
+    const csv = jsonToCSV(jsonFile, { delimiter: ';' });
+
+    const jsonString = `data:text/csv;charset=utf-8,${encodeURIComponent(
+        csv
+    )}`;
+    const link = document.createElement("a");
+    link.href = jsonString;
+    link.download = "parkoviOsvjezeni.csv";
+
+    link.click();
+};
 
 const Index: React.FC = () => {
+
+    const { isAuthenticated } = useAuth0();
+
+    //////////////////////////////////////////////////////////////////////////////////
+
+    const handleOsvijeziPreslike = async () => {
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/podaci`);
+        const data = await res.json();
+        const jsonFile = data.response;
+
+        downloadJSON(jsonFile);
+        downloadCSV(jsonFile);
+    };
+
+    //////////////////////////////////////////////////////////////////////////////////
+
     return (
         <main>
             <TopAppBar />
@@ -21,10 +64,19 @@ const Index: React.FC = () => {
                 <Paper sx={{ padding: '2rem' }}>
                     <Typography variant='h4'>Preuzimanje podataka</Typography>
                     <br />
-                    <Stack direction='row' spacing='1rem'>
-                        <a href='/parkovi_prirode.csv' download>CSV Format</a>
-                        <a href='/parkovi_prirode.json' download>JSON Format</a>
-                    </Stack>
+                    <Grid container>
+                        <Grid item xs={12} md={6}>
+                            <Stack direction='row' spacing='1rem'>
+                                <a href='/parkovi_prirode.csv' download>CSV Format</a>
+                                <a href='/parkovi_prirode.json' download>JSON Format</a>
+                            </Stack>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            {isAuthenticated &&
+                                <Button variant='contained' color='secondary' onClick={handleOsvijeziPreslike}>Osviježi preslike</Button>
+                            }
+                        </Grid>
+                    </Grid>
                 </Paper>
                 <br />
                 <Paper sx={{ padding: '2rem' }}>
