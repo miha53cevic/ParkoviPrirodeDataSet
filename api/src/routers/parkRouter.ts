@@ -1,7 +1,7 @@
 import { Router } from "express";
 
 import query from '../db';
-import { createResponse, NOT_IMPLEMENTED, ParkCSVToJSON, ParkJSON } from "../util";
+import { createResponse, NOT_IMPLEMENTED, ParkCSVToJSON, ParkJSON, ParkJSONLD } from "../util";
 
 const router = Router();
 
@@ -49,7 +49,46 @@ router.get(url, async (req, res) => {
     const finalJSON: ParkJSON[] = [];
     map.forEach((park => finalJSON.push(park)));
 
-    return res.status(200).send(createResponse('OK', `Vraćen park s id: ${id}`, finalJSON));
+    // Dodaj jsonld podatke
+    const temp = finalJSON[0];
+    const jsonld: ParkJSONLD = {
+        "@context": {
+            "@vocab": 'http://schema.org/',
+            "idpark": "identifier",
+            "naziv": "name",
+            "tel": "telephone",
+            "nazivlokacija": "address",
+            "nazivdrzava": "containedInPlace",
+            "nazivvrsta": "disambiguatingDescription",
+            "povrsina": "additionalProperty",
+            "utemeljen": "additionalProperty",
+            "sluzbenastranica": "additionalProperty",
+            "nazivprodajnogmjesta": "additionalProperty",
+            "email": "additionalProperty"
+        },
+        "@type": 'Park',
+        idpark: temp.idpark,
+        naziv: temp.naziv,
+        povrsina: {
+            "@type": 'Float',
+            '@value': temp.povrsina,
+        },
+        utemeljen: {
+            '@type': 'Date',
+            '@value': temp.utemeljen,
+        },
+        sluzbenastranica: temp.sluzbenastranica,
+        email: temp.email,
+        nazivlokacija: temp.nazivlokacija,
+        nazivdrzava: temp.nazivdrzava,
+        tel: temp.tel,
+        nazivvrsta: temp.nazivvrsta,
+        nazivprodajnogmjesta: temp.nazivprodajnogmjesta,
+        znamenitost: temp.znamenitost,
+    };
+
+
+    return res.status(200).send(createResponse('OK', `Vraćen park s id: ${id}`, jsonld));
 });
 
 router.post(url, NOT_IMPLEMENTED);
@@ -68,7 +107,7 @@ router.put(url, async (req, res) => {
 });
 
 router.delete(url, async (req, res) => {
-    
+
     const { id } = req.params;
 
     const queryString = "DELETE FROM Park WHERE Park.idPark = $1";

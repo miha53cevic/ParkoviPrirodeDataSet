@@ -20,6 +20,32 @@ export interface ParkJSON {
     znamenitost: Znamenitost[],
 };
 
+export interface ParkJSONLD {
+    '@context': {
+        '@vocab': string,
+        [key: string]: string,
+    },
+    '@type': string,
+    idpark: number,
+    naziv: string,
+    povrsina: {
+        '@type': string,
+        '@value': string,
+    },
+    utemeljen: {
+        '@type': string,
+        '@value': string,
+    },
+    sluzbenastranica: string,
+    email: string,
+    nazivlokacija: string,
+    nazivdrzava: string,
+    tel: string[],
+    nazivvrsta: string,
+    nazivprodajnogmjesta: string[],
+    znamenitost: Znamenitost[],
+};
+
 export interface ParkCSVToJSON {
     idpark: number,
     naziv: string,
